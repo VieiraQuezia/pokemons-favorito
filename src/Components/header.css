@@ -10,7 +10,7 @@
     width: 90vw;
 
     /* Estilização */
-    background-color: #2e2e84;
+    /* background-color: #2e2e84; */
 }
 
 /* Logo */
@@ -33,5 +33,13 @@
 
 .headerBox h1:hover {
     transform: scale(1.1);
+}
+
+img {
+    width: 70%;
+    margin-bottom: 40%;
+    margin-left: 8.5%;
+    
+    
 }
 
