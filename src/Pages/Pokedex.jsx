@@ -2,10 +2,9 @@ import { useState } from "react";
 import "./pokedex.css";
 import Header from "../Components/header";
 import PokemonH from "/blinkiesCafe-7j.gif"
-
+import CorBotao from "../Components/CorBotao";
 
 // componentes
-import Header from "../Components/header";
 import Footer from "../Components/Footer";
 import NavBar from "../Components/Navbar";
 
@@ -46,12 +45,11 @@ export default function PokemonSearch() {
 
   return (
 <>
-<Header />
-<NavBar />
 <div className="botao">
 </div>
 <Header img={PokemonH}/>
-
+<NavBar />
+<CorBotao />
     <div className="container">
       <input
         type="text"
@@ -69,7 +67,7 @@ export default function PokemonSearch() {
       {pokemon && (
         <div className="pokemon-card">
           <h2>{pokemon.nome.toUpperCase()} # {pokemon.id}</h2>
-          <img src={pokemon.imagem} alt={pokemon.nome}  />
+          <img src={pokemon.imagem} alt={pokemon.nome} style={{width:'300px', border:'2px solid black'}}  />
           <button onClick={adicionarAosFavoritos} className="favorites-button">
             Adicionar aos Favoritos
           </button>

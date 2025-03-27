@@ -17,8 +17,7 @@ function App() {
 
 
 
-<h2> Modo: <sub> {temaEscuro ? 'Escuro' : 'Claro'} </sub> </h2>
-<button onClick={() => setTemaEscuro(!temaEscuro)} > {temaEscuro ? '☀' : '🌙'}  </button>
+<button className="botaoCor" onClick={() => setTemaEscuro(!temaEscuro)} > {temaEscuro ? '☀' : '🌙'}  </button>
 
    </>
     )

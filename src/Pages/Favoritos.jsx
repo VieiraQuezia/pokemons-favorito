@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "../Components/header";
-import Footer from "../Components/footer";
+// import Footer from "../Components/footer";
 
 function PokemonsFavoritos() {
   const [pokemonsFavoritos, setPokemonsFavoritos] = useState(null);

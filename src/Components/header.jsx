@@ -5,7 +5,7 @@ function Header(props) {
     return(
         <>
             <header className="headerBox">
-                <img src={props.img} alt="Pokémon" />
+                <img src={props.img} alt="Pokémon" style={{width:'70vw'}} />
             </header>
         </>
     )
