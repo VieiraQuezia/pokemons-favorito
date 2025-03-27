@@ -1,0 +1,36 @@
+/* Header Box */
+.headerBox {
+    /* Flexbox Configurações */
+    display: flex;
+justify-content: space-around;
+    align-items: center;
+
+    /* Tamanho */
+    height: 20vh;
+
+    /* Estilização */
+    background-color: #2e2e84;
+}
+
+/* Logo */
+.logoHeader {
+    width: auto;
+    height: 17vh;
+    transition: all 1s ease
+}
+
+
+
+/* Título */
+.headerBox h1 {
+    color: #eff2f4;
+    font-size: 4em;
+    transition: all 1s ease;
+    font-family: "Sriracha", cursive;
+    margin-left: 30%;
+}
+
+.headerBox h1:hover {
+    transform: scale(1.1);
+}
+
