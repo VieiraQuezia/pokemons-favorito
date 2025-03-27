@@ -18,7 +18,7 @@ function Header() {
     return(
         <>
             <header className="headerBox">
-                <h1>Pokemon</h1>
+                <img src="public/blinkiesCafe-7j.gif" alt="Pokémon" />
             </header>
         </>
     )
