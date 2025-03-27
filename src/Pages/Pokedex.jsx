@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "./pokedex.css";
+import Header from "../Components/header";
+import PokemonH from "/blinkiesCafe-7j.gif"
+
 
 // componentes
 import Header from "../Components/header";
@@ -47,6 +50,7 @@ export default function PokemonSearch() {
 <NavBar />
 <div className="botao">
 </div>
+<Header img={PokemonH}/>
 
     <div className="container">
       <input
