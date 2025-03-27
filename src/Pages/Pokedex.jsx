@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "./pokedex.css";
 
+// componentes
+import Header from "../Components/header";
+import Footer from "../Components/Footer";
+import NavBar from "../Components/Navbar";
+
 export default function PokemonSearch() {
   const [search, setSearch] = useState("");
   const [pokemon, setPokemon] = useState(null);
@@ -30,14 +35,16 @@ export default function PokemonSearch() {
 
   const adicionarAosFavoritos = () => {
     if (!pokemon) return;
-    const favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+    const favoritos = JSON.parse(localStorage.getItem("Pokemons-Favoritos")) || [];
     favoritos.push(pokemon);
-    localStorage.setItem("favoritos", JSON.stringify(favoritos));
+    localStorage.setItem("Pokemons-Favoritos", JSON.stringify(favoritos));
     alert("Pokémon adicionado aos favoritos!");
   };
 
   return (
 <>
+<Header />
+<NavBar />
 <div className="botao">
 </div>
 
@@ -57,14 +64,14 @@ export default function PokemonSearch() {
 
       {pokemon && (
         <div className="pokemon-card">
-          <h2>{pokemon.nome.toUpperCase()}</h2>
-          <img src={pokemon.imagem} alt={pokemon.nome} />
-          <p>Tipo: {pokemon.tipos}</p>
+          <h2>{pokemon.nome.toUpperCase()} # {pokemon.id}</h2>
+          <img src={pokemon.imagem} alt={pokemon.nome}  />
           <button onClick={adicionarAosFavoritos} className="favorites-button">
             Adicionar aos Favoritos
           </button>
         </div>
       )}
+      <Footer />
     </div>
     </>
   );

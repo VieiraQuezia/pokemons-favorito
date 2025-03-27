@@ -24,7 +24,6 @@ function PokemonsFavoritos() {
 
   return (
     <div>
-      <Header />
       <center>
         <h2 className="detalhe">POKÉMONS FAVORITOS 💗:</h2>
       </center>
