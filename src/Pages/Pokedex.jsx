@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "./pokedex.css";
+import Header from "../Components/header";
+import PokemonH from "/blinkiesCafe-7j.gif"
+
 
 export default function PokemonSearch() {
   const [search, setSearch] = useState("");
@@ -40,6 +43,7 @@ export default function PokemonSearch() {
 <>
 <div className="botao">
 </div>
+<Header img={PokemonH}/>
 
     <div className="container">
       <input
