@@ -1,6 +1,5 @@
 import { useState } from "react";
-import "./home.css";
-import Botao from "../components/botao"
+import "./pokedex.css";
 
 export default function PokemonSearch() {
   const [search, setSearch] = useState("");
@@ -20,6 +19,7 @@ export default function PokemonSearch() {
         nome: data.name,
         imagem: data.sprites.front_default,
         tipos: data.types.map((t) => t.type.name).join(", "),
+        id: data.id,
       });
       setError(null);
     } catch (err) {
@@ -39,7 +39,6 @@ export default function PokemonSearch() {
   return (
 <>
 <div className="botao">
-  <Botao/>
 </div>
 
     <div className="container">

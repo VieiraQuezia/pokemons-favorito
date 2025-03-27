@@ -2,11 +2,12 @@
 .headerBox {
     /* Flexbox Configurações */
     display: flex;
-justify-content: space-around;
+/* justify-content: space-around; */
     align-items: center;
 
     /* Tamanho */
     height: 20vh;
+    width: 90vw;
 
     /* Estilização */
     background-color: #2e2e84;
