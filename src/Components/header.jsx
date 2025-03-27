@@ -1,10 +1,11 @@
 import "./header.css"
 
 function Header() {
+ 
     return(
         <>
             <header className="headerBox">
-                <img src="/blinkiesCafe-7j.gif" alt="Pokémon" />
+                <img src="public/blinkiesCafe-7j.gif" alt="Pokémon" />
             </header>
         </>
     )

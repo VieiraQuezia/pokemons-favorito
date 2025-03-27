@@ -32,10 +32,10 @@ function Footer() {
           <section className="sobreNos">
             <p>
               <h4> Tropa da Mandioca © 2025 </h4> – Nosso site, desenvolvido com
-              React, React Router, useEffect e useState, permite que você
-              escolha um país usando uma API. As informações selecionadas são
-              salvas no localStorage e exibidas dinamicamente nas outras
-              páginas. 🌍🚀
+              React, React Router, useEffect e useState, permite que os usuários
+              adicionem Pokémon aos favoritos a partir de uma API. Os dados são
+              armazenados no localStorage e exibidos dinamicamente em outra
+              página, onde também é possível remover um Pokémon dos favoritos.💗
             </p>
           </section>
 
@@ -50,7 +50,10 @@ function Footer() {
         </section>
         <nav className="logos">
           <img className="imgLogo" src={logo} />
-          <a href="https://github.com/VieiraQuezia/projeto-paises-api" target="_blank">
+          <a
+            href="https://github.com/VieiraQuezia/projeto-paises-api"
+            target="_blank"
+          >
             <img className="imgGithub" src={ImgGitHub} />
           </a>
         </nav>
