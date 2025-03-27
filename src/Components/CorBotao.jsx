@@ -1,19 +1,27 @@
-import {useState,useEffect} from 'react';
+import { useEffect, useState } from "react"
+import './CorBotao.css'
+function App() {
+    const [temaEscuro, setTemaEscuro] = useState(false)
 
-function CorBotao() {
-    const [temaEscuro,setTemaEscuro] = useState(() => JSON.parse(localStorage.getItem("modoEscuro")) || false);
-    
     useEffect(() => {
-        localStorage.setItem("modoEscuro", JSON.stringify(temaEscuro));
-        document.body.style.backgroundColor = temaEscuro ? "black" : "#fff";
 
-    }, [temaEscuro]); //Executa sempre que "temaEscuro" mudar
+       document.body.style.backgroundColor = temaEscuro ? '#242424' : 'white'
+       document.body.style.color = temaEscuro ? 'white' : 'black'
+
+       console.log("Tema escuro: ", temaEscuro ? "Ativado" : "Desativado")
+    }, [temaEscuro])
+
 
     return(
-        <div style={{color: temaEscuro ? "#fff": "black"}}>
-            <button onClick={() => setTemaEscuro(!temaEscuro)}> {temaEscuro ? "Modo Escuro" : "Modo Claro"}</button>
-        </div>
+        <>
+
+
+
+<h2> Modo: <sub> {temaEscuro ? 'Escuro' : 'Claro'} </sub> </h2>
+<button onClick={() => setTemaEscuro(!temaEscuro)} > {temaEscuro ? '☀' : '🌙'}  </button>
+
+   </>
     )
 }
 
-export default CorBotao;
+export default App

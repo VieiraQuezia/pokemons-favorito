@@ -1,0 +1,19 @@
+/* BotaoTema.css */
+
+body{
+
+    .escuro {
+        filter: grayscale(100%);
+        background-color: black;
+        color: white;
+    }
+    
+    .claro{
+    
+        filter: grayscale(100%);
+        background-color: white;
+        color: black;
+    }
+    
+
+}
