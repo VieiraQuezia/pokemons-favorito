@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "../Components/header";
+import Footer from "../Components/footer";
 
 function PokemonsFavoritos() {
   const [pokemonsFavoritos, setPokemonsFavoritos] = useState(null);
@@ -14,25 +15,24 @@ function PokemonsFavoritos() {
   if (!pokemonsFavoritos) {
     return (
       <>
-      <Header/>
+        <Header />
         <h2>Nenhum pokemon salvo</h2>
+        <Footer/>
       </>
     );
   }
 
   return (
     <div>
-        <Header/>
+      <Header />
       <center>
-        <h2 className="detalhe">POKÉMONS FAVORITOS:</h2>
+        <h2 className="detalhe">POKÉMONS FAVORITOS 💗:</h2>
       </center>
       <article className="bloquinhos">
         <nav className="bloquinho">
+          <img src={pokemonsFavoritos.imagem} />
           <p>
-            {pokemonsFavoritos.id}
-          </p>
-          <p>
-            {pokemonsFavoritos.name}
+            {pokemonsFavoritos.id}|{pokemonsFavoritos.nome}
           </p>
         </nav>
       </article>
