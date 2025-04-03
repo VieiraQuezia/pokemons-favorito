@@ -1,26 +1,32 @@
-import { useEffect, useState } from "react"
-import './CorBotao.css'
+import { useEffect, useState } from "react";
+import './CorBotao.css';
+
 function App() {
-    const [temaEscuro, setTemaEscuro] = useState(false)
+    const [temaEscuro, setTemaEscuro] = useState(() => {
+        // Verifica o localStorage para definir o tema inicial
+        const temaSalvo = localStorage.getItem('temaEscuro');
+        return temaSalvo === 'true'; // Retorna true se o valor for 'true', caso contrário, false
+    });
 
     useEffect(() => {
+        
+        // Atualiza o estilo do corpo com base no tema
+        document.body.style.backgroundColor = temaEscuro ? '#f5ea95' : '#fecdd0';
+        
 
-       document.body.style.backgroundColor = temaEscuro ? '#242424' : 'white'
-       document.body.style.color = temaEscuro ? 'white' : 'black'
+        // Armazena a preferência no localStorage
+        localStorage.setItem('temaEscuro', temaEscuro);
 
-       console.log("Tema escuro: ", temaEscuro ? "Ativado" : "Desativado")
-    }, [temaEscuro])
+        console.log("Tema escuro: ", temaEscuro ? "Ativado" : "Desativado");
+    }, [temaEscuro]);
 
-
-    return(
+    return (
         <>
-
-
-
-<button className="botaoCor" onClick={() => setTemaEscuro(!temaEscuro)} > {temaEscuro ? '☀' : '🌙'}  </button>
-
-   </>
-    )
+            <button className="botaoCor" onClick={() => setTemaEscuro(!temaEscuro)}>
+                {temaEscuro ? 'claro' : ' escuro'}
+            </button>
+        </>
+    );
 }
 
-export default App
+export default App;

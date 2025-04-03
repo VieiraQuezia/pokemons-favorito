@@ -1,2 +1,89 @@
-.container{
+.botao{
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.container {
+  margin: 50px auto 0;
+  width: 30%;
+  padding: 16px;
+  background: #d57ac197;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15%;
+
+}
+
+.input-field {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color:  #e80ab8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background-color: #ca32a1ee;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pokemon-card {
+  text-align: center;
+  margin-top: 20px;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-card img {
+  max-width: 120px;
+  margin-top: 10px;
+}
+
+.pokemon-card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+color: black;
+}
+
+.pokemon-card p {
+  font-size: 16px;
+  color: #374151;
+  
+}
+
+.favorites-button {
+  border: none;
+  margin-top: 10px;
+  background-color: #10b981;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.favorites-button:hover {
+  background-color: #059669;
+  border: 2px solid black;
 }
