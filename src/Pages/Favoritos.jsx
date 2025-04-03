@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./favorito.css";
-import Botao from "../Components/CorBotao"
  import Header from '../Components/header'
  import Footer from '../Components/footer'
  import Navbar from '../Components/Navbar'
@@ -35,10 +34,7 @@ function Favoritos() {
 <Header img={Img}/>
 <Navbar/>
       {/* Div que contém o componente Botao */}
-      <div className="botaozao">
-        <Botao />
-      </div>
- 
+     
       {/* Div principal que contém a lista de Pokémon favoritos */}
       <div className="favoritos-container">
         <h1 className="favoritos-titulo">Favoritos</h1>

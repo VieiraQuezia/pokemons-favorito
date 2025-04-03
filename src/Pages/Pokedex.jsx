@@ -2,7 +2,6 @@
 import { useState } from "react";
 // Importando o arquivo de estilos CSS do componente
 import "./Pokedex.css";
-import Botao from "../Components/CorBotao"
  import Header from '../Components/header'
  import Footer from '../Components/footer'
  import Navbar from '../Components/Navbar'
@@ -68,8 +67,7 @@ function PokemonSearch() {
     // Salva a lista de favoritos atualizada no localStorage
     localStorage.setItem("favoritos", JSON.stringify(favoritos));
     
-    // Exibe um alerta informando que o Pokémon foi adicionado aos favoritos
-    alert("Pokémon adicionado aos favoritos!");
+   
   };
 
   return (
@@ -78,7 +76,6 @@ function PokemonSearch() {
     <Navbar/>
       {/* Seção que contém o componente Botao */}
       <div className="botao">
-        <Botao />
       </div>
 
       {/* Container principal do componente */}
