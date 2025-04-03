@@ -1,7 +1,7 @@
 // Importando o hook useState do React para gerenciar os estados do componente
 import { useState } from "react";
 // Importando o arquivo de estilos CSS do componente
-import "./Pokedex.css";
+import "./pokedex.css";
  import Header from '../Components/header'
  import Footer from '../Components/footer'
  import Navbar from '../Components/Navbar'
