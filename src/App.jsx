@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Pokedex"
-import Favoritos from "./pages/Favoritos"
+import Home from "./paginas/Pokedex"
+import Favoritos from "./paginas/Favoritos"
 
 
 function App() {
