@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import './CorBotao.css';
-import '../pages/pokedex.css'
+import '../paginas/pokedex.css'
 
 function App() {
     const [temaEscuro, setTemaEscuro] = useState(() => {
