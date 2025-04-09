@@ -2,9 +2,9 @@
 import { useState } from "react";
 // Importando o arquivo de estilos CSS do componente
 import "./Pokedex.css";
- import Header from '../Components/header'
- import Footer from '../Components/footer'
- import Navbar from '../Components/Navbar'
+ import Header from '../components/header'
+ import Footer from '../components/footer'
+ import Navbar from '../components/Navbar'
 
  import Img from '/blinkiesCafe-7j.gif'
 
