@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./favorito.css";
- import Header from '../components/header'
- import Footer from '../components/footer'
- import Navbar from '../components/Navbar'
+ import Header from '../componentes/header'
+ import Footer from '../componentes/footer'
+ import Navbar from '../componentes/Navbar'
 
  import Img from '/blinkiesCafe-7j.gif'
  
